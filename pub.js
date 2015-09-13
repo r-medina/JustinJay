@@ -7,21 +7,25 @@ var placeText = function() {
   text.css('left', poster.position().left)
   text.css('width', poster.width() - padding)
   text.css('padding-left', padding)
-  text.css('top', (poster.height()*.6)|0)
+  text.css('top', (poster.height()*.593)|0)
 }
 
 $(document).ready(function() {
   swal('click on your city to buy tickets!')
 
   var $wind = $(window)
-
+  
   poster = $('#back img')
   text = $('#text')
   texture = $('#texture')
-
-  text.css('visibility', 'visible')
-  placeText()
-
+  
+  setTimeout(function() {
+    text.animate({
+      opacity: 1
+    })
+    placeText()
+  }, 300)
+  
   var $s = $('#social')
   $s.css('top', poster.height() - $s.height() - 2)
 
