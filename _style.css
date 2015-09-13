@@ -7,10 +7,10 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: Helvetica, sans-serif;
+  font-family: "ff-good-headline-web-pro-con", sans-serif;
 }
 
-div {
+.container {
   display: block;
   width: 100%;
   height: 100%;
@@ -18,30 +18,39 @@ div {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
-  min-height: 850px;
 }
 
 #texture {
   background-image: url("top.png");
-  z-index: 2;
-  opacity: .2;
+  z-index: 10;
+  opacity: .3;
   background-repeat: repeat;
+  min-height: 850px;
 }
 
 #back {
-  background-image: url("back.png");
-  z-index: 0;
+  /* background-image: url("back.png"); */
+  z-index: 1;
+  text-align: center;
+}
+
+#back img {
+  height: 100%;
+  min-height: 850px;
 }
 
 #text {
-  font-size: .6em;
-  width: 50%;
-  z-index: 4;
-  left: 35%;
+  font-size: .75em;
+  z-index: 400;
+  font-weight: 400;
+  font-style: italic;
+  color: #3a3d58;
+  height: 25% !important;
+  visibility: hidden;
 }
 
 #text > div {
-  width: 40%;
+  width: 50%;
   position: relative;
   text-align: left;
 }
@@ -55,9 +64,14 @@ div {
 }
 
 span.date-loc {
-  font-weight: bold;
+  font-weight: 900;
+  font-style: italic;
 }
 
+a {
+  color: #4754af;
+  text-decoration: none;
+}
 #dates {
   text-align: center;
 }
@@ -66,16 +80,8 @@ span.date-loc {
   height: 100%;
 }
 
-/* #social { */
-/*   background-image: url("all.png"); */
-/*   z-index: 0; */
-/* } */
-
 #social {
+  position: relative;
+  z-index: 400;
   text-align: center;
-  z-index: 4;
-}
-
-#social img {
-  height: 100%;
 }

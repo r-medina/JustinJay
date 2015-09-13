@@ -3,60 +3,96 @@
   <head>
     <meta name="viewport" content="initial-scale=1 ,width=device-width, user-scalable=yes">
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.typekit.net/lvd4cjt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="jquery.min.js"></script>
+    <script src="pub.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
   </head>
   <body>
 
-    <div id="texture">
+    <div id="texture" class="container">
     </div>
 
-    <div id="back">
+    <div id="back" class="container">
+      <img src="back.png">
     </div>
 
-    <!-- <div id="text"> -->
-    <!--     <div id="t1"> -->
-    <!--       <span class="date-loc">SEPT 5 - NEW YORK, NY </span>// ELECTRIC ZOO<br> -->
-    <!--       <span class="date-loc">SEPT 6 - SAN BERNARDINO, CA </span>// NOCTURNAL WONDERLAND<br> -->
-    <!--       <span class="date-loc">SEPT 12 - DENVER, CO </span>// DIRTYBIRD BBQ<br> -->
-    <!--       <span class="date-loc">SEPT 17 - MILWAUKEE, WI </span>// OAK LOUNGE<br> -->
-    <!--       <span class="date-loc">SEPT 18 - FERNDALE, MI </span>// GRASSHOPPER UNDERGROUND<br> -->
-    <!--       <span class="date-loc">SEPT 19 - CHICAGO, IL </span>// PRIMARY<br> -->
-    <!--       <span class="date-loc">SEPT 20 - ALBUQUERQUE, NM </span>// STEREO BAR<br> -->
-    <!--       <span class="date-loc">SEPT 26 - FAIRBURN, GA </span>// TOMORROWWORLD<br> -->
-    <!--       <span class="date-loc">SEPT 26 - SEATTLE, WA </span>// DECIBEL FESTIVAL<br> -->
-    <!--       <br> -->
-    <!--       <span class="date-loc">OCT 2 - OCT 4 - SILVERADO, CA </span>// DIRTYBIRD CAMPOUT<br> -->
-    <!--       <span class="date-loc">OCT 11 - SAN DIEGO, CA </span>// CRSSD FESTIVAL<br> -->
-    <!--       <span class="date-loc">OCT 21 - DENVER, CO </span>// BLUEBIRD THEATER<br> -->
-    <!--       <span class="date-loc">OCT 22 - LAWRENCE, KS </span>// GRANADA THEATRE<br> -->
-    <!--       <span class="date-loc">OCT 23 - DALLAS, TX </span>// HOUSE OF BLUES<br> -->
-    <!--       <span class="date-loc">OCT 24 - AUSTIN, TX </span>// VULCAN GAS COMPANY<br> -->
-    <!--       <span class="date-loc">OCT 30 - LONDON, UK </span>// BRIXTON JAMM<br> -->
-    <!--       <span class="date-loc">OCT 30 - NOTTINGHAM, UK </span>// STEALTH<br> -->
-    <!--       <span class="date-loc">OCT 31 - BIRMINGHAM, UK </span>// RAINBOW<br> -->
-    <!--     </div> -->
-
-    <!--     <div id="t2"> -->
-    <!--       <span class="date-loc">NOV 6 - CAMPINAS, BRAZIL </span>// CLUB 88<br> -->
-    <!--       <span class="date-loc">NOV 7 - SAO PAULO, BRAZIL </span>// CLASH CLUB<br> -->
-    <!--       <span class="date-loc">NOV 13 - NELSON, BC </span>// SPIRIT BAR<br> -->
-    <!--       <span class="date-loc">NOV 14 - VANCOUVER, BC </span>// MIA<br> -->
-    <!--       <span class="date-loc">NOV 19 - MONTREAL, QC </span>// ECOLEE PRIVE<br> -->
-    <!--       <span class="date-loc">NOV 20 - TORONTO, ON </span>// CODA<br> -->
-    <!--       <span class="date-loc">NOV 25 - SAN DIEGO, CA </span>// BANG BANG<br> -->
-    <!--       <br> -->
-    <!--       <span class="date-loc">DEC 2 - WASHINGTON, DC </span>// FLASH<br> -->
-    <!--       <span class="date-loc">DEC 3 - PHILADELPHIA, PA </span>// RUMOR<br> -->
-    <!--       <span class="date-loc">DEC 4 - BROOKLYN, NY </span>// GOOD ROOM<br> -->
-    <!--       <span class="date-loc">DEC 5 - BOSTON, MA </span>// PRIME NIGHTCLUB<br> -->
-    <!--     </div> -->
-    <!-- </div> -->
-
-    <div id="dates">
-      <img src="dates.png">
+    <div id="text" class="container">
+      <div id="t1">
+        <span class="date-loc">SEPT 5 - NEW YORK, NY </span>// ELECTRIC ZOO<br>
+        <span class="date-loc">SEPT 6 - SAN BERNARDINO, CA </span>// NOCTURNAL WONDERLAND<br>
+        <span class="date-loc">SEPT 12 - DENVER, CO </span>// DIRTYBIRD BBQ<br>
+        <a href="http://bit.ly/1JAXmIJ" alt="Milwaukee">
+          <span class="date-loc">SEPT 17 - MILWAUKEE, WI </span>// OAK LOUNGE
+        </a><br>
+        <a href="http://www.clubtix.com/justin-jay-mom%2C-i-graduated-tour-tickets-406837?no_redirect=" alt="Ferndale">
+          <span class="date-loc">SEPT 18 - FERNDALE, MI </span>// GRASSHOPPER UNDERGROUND
+        </a><br>
+        <a href="http://www.clubtix.com/react/justin-jay-east-room-tickets-406186?p=18980" alt="Chicago">
+          <span class="date-loc">SEPT 19 - CHICAGO, IL </span>// PRIMARY
+        </a><br>
+        <a href="http://www.electrostub.com/events/153192" alt="Albuquerque">
+          <span class="date-loc">SEPT 20 - ALBUQUERQUE, NM </span>// STEREO BAR
+        </a><br>
+        <span class="date-loc">SEPT 26 - FAIRBURN, GA </span>// TOMORROWWORLD<br>
+        <span class="date-loc">SEPT 26 - SEATTLE, WA </span>// DECIBEL FESTIVAL<br>
+        <br>
+        <span class="date-loc">OCT 2 - OCT 4 - SILVERADO, CA </span>// DIRTYBIRD CAMPOUT<br>
+        <span class="date-loc">OCT 11 - SAN DIEGO, CA </span>// CRSSD FESTIVAL<br>
+        <span class="date-loc">OCT 21 - DENVER, CO </span>// BLUEBIRD THEATER<br>
+        <span class="date-loc">OCT 22 - LAWRENCE, KS </span>// GRANADA THEATRE<br>
+        <span class="date-loc">OCT 23 - DALLAS, TX </span>// HOUSE OF BLUES<br>
+        <span class="date-loc">OCT 24 - AUSTIN, TX </span>// VULCAN GAS COMPANY<br>
+        <span class="date-loc">OCT 30 - LONDON, UK </span>// BRIXTON JAMM<br>
+        <span class="date-loc">OCT 30 - NOTTINGHAM, UK </span>// STEALTH<br>
+        <span class="date-loc">OCT 31 - BIRMINGHAM, UK </span>// RAINBOW<br>
       </div>
-    
-    <div id="social">
+
+      <div id="t2">
+        <span class="date-loc">NOV 6 - CAMPINAS, BRAZIL </span>// CLUB 88<br>
+        <span class="date-loc">NOV 7 - SAO PAULO, BRAZIL </span>// CLASH CLUB<br>
+        <span class="date-loc">NOV 13 - NELSON, BC </span>// SPIRIT BAR<br>
+        <a href="http://areyoumia.electrostub.com/event.cfm?cart&id=152961" alt="Vancouver">
+          <span class="date-loc">NOV 14 - VANCOUVER, BC </span>// MIA
+        </a><br>
+        <a href="http://saintwoods.electrostub.com/event.cfm?id=153605&cart" alt="Montreal">
+          <span class="date-loc">NOV 19 - MONTREAL, QC </span>// ECOLEE PRIVE
+        </a><br>
+        <span class="date-loc">NOV 20 - TORONTO, ON </span>// CODA<br>
+        <a href="https://www.ticketfly.com/purchase/event/953997" alt="San Diego">
+          <span class="date-loc">NOV 25 - SAN DIEGO, CA </span>// BANG BANG
+        </a><br>
+        <br>
+        <a href="http://www.ticketfly.com/purchase/event/951859" alt="DC">
+          <span class="date-loc">DEC 2 - WASHINGTON, DC </span>// FLASH
+        </a><br>
+        <span class="date-loc">DEC 3 - PHILADELPHIA, PA </span>// RUMOR<br>
+        <a href="http://www.ticketfly.com/event/944669-justin-jay-brooklyn/" alt="Brooklyn">
+          <span class="date-loc">DEC 4 - BROOKLYN, NY </span>// GOOD ROOM
+        </a><br>
+        <a href="http://www.wantickets.com/Events/190009/DEEPER-feat-JUSTIN-JAY-REZZ/" alt="Boston">
+          <span class="date-loc">DEC 5 - BOSTON, MA </span>// PRIME NIGHTCLUB
+        </a><br>
+      </div>
     </div>
 
+    <div id="social">
+      <a href="https://soundcloud.com/justin-jay" alt="SoundCloud">
+        <i class="fa fa-soundcloud fa-2x"></i>
+      </a>
+      <a href="https://www.facebook.com/justinjayofficial" alt="Facebool">
+        <i class="fa fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://instagram.com/justinjaymusic/" alt="Instagram">
+        <i class="fa fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://twitter.com/justinjaymusic" alt="Twitter">
+        <i class="fa fa-twitter fa-2x"></i>
+      </a>
+    </div>
+    
   </body>
 </html>

@@ -2,15 +2,29 @@
 <html lang="en-US">
   <head>
     <meta name="viewport" content="initial-scale=1 ,width=device-width, user-scalable=yes">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <script src="sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert.css">
   </head>
-  <body>
+  <body onload="swal('Heres a message!')">
 
     <div id="texture">
     </div>
 
-    <div id="social">
-      <img src="all.png">
+    <div id="poster">
+      <img src="all.png" usemap="#links">
+      <map name="links">
+        <area shape="rect" coords="50,558,300,571" title="Milwaukee" alt="Milwaukee" href="http://bit.ly/1JAXmIJ">
+        <area shape="rect" coords="50,573,300,586" title="Ferndale" alt="Ferndale" href="http://www.clubtix.com/justin-jay-mom%2C-i-graduated-tour-tickets-406837?no_redirect=">
+        <area shape="rect" coords="86,886,277,907" title="Chicago" alt="Chicago" href="http://www.clubtix.com/react/justin-jay-east-room-tickets-406186?p=18980">
+        <area shape="rect" coords="83,909,338,930" title="Albuquerque" alt="Albuquerque" href="http://www.electrostub.com/events/153192">
+        <area shape="rect" coords="478,850,655,868" title="Vancouver" alt="Vancouver" href="http://areyoumia.electrostub.com/event.cfm?cart&id=152961">
+        <area shape="rect" coords="478,868,702,892" title="Montreal" alt="Montreal" href="http://saintwoods.electrostub.com/event.cfm?id=153605&cart">
+        <area shape="rect" coords="478,955,669,975" title="Washington" alt="Washington" href="http://www.ticketfly.com/purchase/event/951859">
+        <area shape="rect" coords="478,1000,686,1020" title="Brooklyn" alt="Brooklyn" href="http://www.ticketfly.com/event/944669-justin-jay-brooklyn/">
+      </map>
+
     </div>
 
   </body>
