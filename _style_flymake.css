@@ -8,6 +8,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: "ff-good-headline-web-pro-con", sans-serif;
+  font-style: italic;
 }
 
 .container {
@@ -23,9 +24,9 @@ html {
 #texture {
   background-image: url("top.png");
   z-index: 10;
-  opacity: .3;
+  opacity: .35;
   background-repeat: repeat;
-  min-height: 850px;
+  min-height: 1100px;
 }
 
 #back {
@@ -36,15 +37,16 @@ html {
 
 #back img {
   height: 100%;
-  min-height: 850px;
+  min-height: 1100px;
 }
 
 #text {
-  font-size: .75em;
+  font-size: .95em;
+  line-height: 135%;
   z-index: 400;
   font-weight: 400;
   font-style: italic;
-  color: #3a3d58;
+  color: #5A5F86;
   height: 25% !important;
   opacity: 0;
 }
@@ -69,7 +71,7 @@ span.date-loc {
 }
 
 a {
-  color: #4754af;
+  color: #3D47A4;
   text-decoration: none;
 }
 #dates {
@@ -90,4 +92,16 @@ a {
   #texture {
     display: none;
   }
+}
+
+.sweet-alert {
+  font-family: "ff-good-headline-web-pro-con", sans-serif;
+}
+
+.sweet-alert h2 {
+  color: #5A5F86;
+}
+
+button.confirm {
+  background-color: #5A5F86 !important;
 }

@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('BebasNeueBold.otf');
+}
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('BebasNeueBook.otf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +16,8 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "ff-good-headline-web-pro-con", sans-serif;
-  font-style: italic;
+  font-family: "BebasNeueBook", sans-serif;
+  /* font-style: italic; */
 }
 
 .container {
@@ -22,15 +31,14 @@ html {
 }
 
 #texture {
-  background-image: url("top.png");
+  background-image: url("top2.png");
   z-index: 10;
-  opacity: .35;
+  opacity: .25;
   background-repeat: repeat;
   min-height: 1100px;
 }
 
 #back {
-  /* background-image: url("back.png"); */
   z-index: 1;
   text-align: center;
 }
@@ -41,12 +49,13 @@ html {
 }
 
 #text {
-  font-size: .95em;
-  line-height: 135%;
+  font-size: 1.2em;
+  line-height: 170%;
   z-index: 400;
   font-weight: 400;
-  font-style: italic;
-  color: #5A5F86;
+  /* font-style: italic; */
+  text-transform: uppercase;
+  color: #bdc3d8;
   height: 25% !important;
   opacity: 0;
 }
@@ -67,11 +76,12 @@ html {
 
 span.date-loc {
   font-weight: 900;
-  font-style: italic;
+  font-family: "BebasNeueBold";
+  /* font-style: italic; */
 }
 
 a {
-  color: #3D47A4;
+  color: #feffff;
   text-decoration: none;
 }
 #dates {
@@ -85,7 +95,7 @@ a {
 #social {
   position: relative;
   z-index: 400;
-  text-align: center;
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
@@ -103,5 +113,5 @@ a {
 }
 
 button.confirm {
-  background-color: #5A5F86 !important;
+  background-color: #374575 !important;
 }
