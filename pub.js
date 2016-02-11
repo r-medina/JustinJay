@@ -3,11 +3,11 @@ var text
 var texture
 
 var placeText = function() {
-  var padding = poster.width()*.1
+  var padding = poster.width()*.108
   text.css('left', poster.position().left)
   text.css('width', poster.width() - padding)
   text.css('padding-left', padding)
-  text.css('top', (poster.height()*.593)|0)
+  text.css('top', (poster.height()*.55)|0)
 
   var $s = $('#social')
   $s.css('top', poster.height() - $s.height() - 15)

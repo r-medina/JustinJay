@@ -50,7 +50,7 @@ html {
 }
 
 #text {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 170%;
   z-index: 400;
   font-weight: 400;
@@ -73,6 +73,13 @@ html {
 
 #text #t2 {
   float: left;
+}
+
+span.region {
+  font-size: .9em;
+  font-family: 'BebasNeueBook';
+  text-transform: uppercase;
+  color: #feffff;
 }
 
 span.date-loc {
