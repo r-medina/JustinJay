@@ -7,7 +7,7 @@ var placeText = function() {
   text.css('left', poster.position().left)
   text.css('width', poster.width() - padding)
   text.css('padding-left', padding)
-  text.css('top', (poster.height()*.55)|0)
+  text.css('top', (poster.height()*.545)|0)
 
   var $s = $('#social')
   $s.css('top', poster.height() - $s.height() - 15)

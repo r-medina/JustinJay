@@ -49,13 +49,13 @@ html {
 }
 
 #text {
-  font-size: 1.1em;
+  font-size: 1.115em;
   line-height: 170%;
   z-index: 400;
   font-weight: 400;
   /* font-style: italic; */
   text-transform: uppercase;
-  color: #bdc3d8;
+  color:  #bdc3d8;
   height: 25% !important;
   opacity: 0;
 }
@@ -92,6 +92,12 @@ a {
 }
 #dates {
   text-align: center;
+}
+span.red {
+  color: #bb647d;
+}
+a span.red {
+  color: #d87592;
 }
 
 #dates img {
